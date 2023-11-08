@@ -1,4 +1,21 @@
  
+//  .Silder Section Start
+.silder-sec{
+    z-index: 0;
+    background-image: url('../../assets/img/silder-bg.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+    height: 100vh;
+}
+
+
+
+
+
 //  .Shop Our Top Categories 
 .shopCateoriesCard{
     position: relative;

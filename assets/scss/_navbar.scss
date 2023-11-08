@@ -1,3 +1,38 @@
+// Header start
+
+.header-top{
+    background-color: $theme4;
+    & .calls{
+        & span{
+            color: var(--white);
+            text-align: center;
+            margin-left: 5px;
+            font-size: 12px;
+            line-height: 22px;
+            font-weight: 500;
+              }
+            }
+            & .center-block{
+                color: var(--white);
+                font-size: 13px;
+            }
+            & .selected-options{
+                & .langu{
+                    color: var(--white);
+                    margin-right: 10px;
+                    font-size: 12px;
+                }
+                & img{
+                    width: 22px;
+                }
+                & .divied{
+                    border-bottom: 1px solid rgba(0, 0, 0, .24);
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+}
+
 // navbar start
 
 .navbar{
