@@ -1,0 +1,232 @@
+// For Normal Text
+
+.body_text{
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+    line-height: 1.8;
+    padding: 10px 0px 0px 0px;
+    @include sm{
+        font-size: 20px;
+
+    }
+    @include md{
+    font-size: 22px;
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_text_small{
+    font-size: 12px;
+    color: $black;
+    line-height: 1.6;
+    font-weight: 600;
+    opacity: 0.7;
+    @include sm{
+        font-size: 14px;
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_heading_small{
+    font-size: 12px;
+    font-weight: 700;
+    color: $black;
+    @include sm{
+        font-size: 14px;
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+.body_text_large{
+    font-size: 16px;
+    color: $black;
+    line-height: 1.8;
+    font-weight: 600;
+    @include sm{
+        font-size: 18px;
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+// For Space Between Sections Must Apply On Container Fluid
+.side_spacing{
+    padding: 0px 40px !important;
+
+}
+.section_spacing{
+    padding-block: 1.5rem;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        padding-block: 2.5rem;
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+// For Dark Theme and Light Theme
+
+.bg_drak{
+    background-color: $black;
+}
+
+.bg_light{
+    background-color: #F8F9FA;
+}
+
+// For Heading
+
+.body_heading{
+    color:$black;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  
+    @include sm{
+        font-size: 30px;
+
+    }
+    @include md{
+    font-size: 35px;
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+
+.body_heading_large{
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+// For Subheading
+
+.body_subheading{
+    font-size: 22px;
+    font-weight: 600;
+    color: $gray-600;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_subheading_small{
+    font-size: 12px;
+    font-weight: 700;
+    color: $gray-600;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_subheading_large{
+    font-size: 15px;
+    font-weight: 700;
+    color: $gray-600;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}

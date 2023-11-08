@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/swiper/swiper.css">
+</head>
+<body>
+
+    <!-- navbar start -->
+
+<nav class="navbar navbar-expand-xl  container-fluid " aria-label="Offcanvas navbar large">
+    <a class="navLogo d-flex align-items-center" href="javascript:;"><img src="assets/img/navbar/logo.svg" alt="logo" class="img-fluid w-100 h-100"></a>
+    <div class="acocuntSection d-flex align-items-center justify-content-center d-xl-none d-sm-block d-none">
+        <ul class="list-unstyled d-flex align-items-center gap-3 mb-0">
+            <li><a href="javascipt:;" class="text-decoration-none d-flex align-items-center accountLink"><span class="accountIcon d-inline-flex align-items-center"><img src="assets/img/navbar/accountImg.png" alt="account" class="img-fluid w-100 h-100"></span> Account</a></li>
+            <li><a href="javascipt:;" class="text-decoration-none d-flex align-items-center accountLink"><span class="accountIcon d-inline-flex align-items-center"><img src="assets/img/navbar/cart.png" alt="account" class="img-fluid w-100 h-100"></span> Cart</a></li>
+        </ul>
+      </div>
+    <button class="navbar-toggler d-xl-none d-flex align-items-center border-0 shadow-none "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+      <span class="menuIcon d-inline-flex align-items-center"> <img src="assets/img/navbar/menu.svg" alt="menu" class="img-fluid w-100 h-100"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark d-xl-block d-none" >
+    
+      <div class="offcanvas-body ">
+          <ul class="navbar-nav justify-content-center gap-xxl-5 gap-4 flex-grow-1 pe-3">
+            <!-- <li class="nav-item navItem">
+              <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink active">home</span></a>
+            </li> -->
+            <li class="nav-item navItem">
+              <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Category</span>  <span class="d-inline-flex align-items-center arrowIcon"><img src="assets/img/navbar/downarrow.png" alt="downarrow" class="img-fluid w-100 h-100"></span></a>
+              <ul class="sub-menu">
+                <div class="categoryHeading">Popular Categories</div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="categoryCard position-relative">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="imageCat"><img src="assets/img/navbar/navcategery1.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <a href="javascript:;" class="productHeading stretched-link">Furniture</a>
+                                            <div class="productItem">240  Item  Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="categoryCard position-relative">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="imageCat"><img src="assets/img/navbar/navcategery2.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <a href="javascript:;" class="productHeading stretched-link">Hand Bag</a>
+                                            <div class="productItem">240  Item  Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="categoryCard position-relative">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="imageCat"><img src="assets/img/navbar/navcategery3.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <a href="javascript:;" class="productHeading stretched-link">Shoe</a>
+                                            <div class="productItem">240  Item  Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="categoryCard position-relative">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="imageCat"><img src="assets/img/navbar/navcategery4.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <a href="javascript:;" class="productHeading stretched-link">Headphone</a>
+                                            <div class="productItem">240  Item  Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="categoryCard position-relative">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="imageCat"><img src="assets/img/navbar/navcategery5.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <a href="javascript:;" class="productHeading stretched-link">Laptop</a>
+                                            <div class="productItem">240  Item  Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="categoryCard position-relative">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="imageCat"><img src="assets/img/navbar/navcategery6.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <a href="javascript:;" class="productHeading stretched-link">Book</a>
+                                            <div class="productItem">240  Item  Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item navItem">
+              <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Deals</span>  </a>
+           
+            </li>
+            <li class="nav-item navItem">
+              <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">What’s New</span> </a>
+            </li>
+            <li class="nav-item navItem">
+              <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Delivery</span> </a>
+            </li>
+            <li class="nav-item navItem d-flex align-items-center">
+                <div class="input-group inputGroup d-flex align-items-center">
+                    <input type="text" class="form-control border-0 shadow-none inputSearch" placeholder="Search Product" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <span class="input-group-text searchIcon bg-transparent" id="basic-addon2"><img src="assets/img/navbar/search.svg" alt="search" class="img-fluid w-100 h-100"></span>
+
+                  </div>
+            </li>
+          </ul>
+          <div class="acocuntSection d-flex align-items-center justify-content-center">
+            <ul class="list-unstyled d-flex align-items-center gap-3 mb-0">
+                <li><a href="javascipt:;" class="text-decoration-none d-flex align-items-center accountLink"><span class="accountIcon d-inline-flex align-items-center"><img src="assets/img/navbar/accountImg.png" alt="account" class="img-fluid w-100 h-100"></span> Account</a></li>
+                <li><a href="javascipt:;" class="text-decoration-none d-flex align-items-center accountLink"><span class="accountIcon d-inline-flex align-items-center"><img src="assets/img/navbar/cart.png" alt="account" class="img-fluid w-100 h-100"></span> Cart</a></li>
+
+            </ul>
+          </div>
+      </div>
+  </div>
+  
+</nav>
+
+<!-- navbar end  -->
+
+
+<div class="container-fluid section_spacing side_spacing">
+    <div class="row">
+        <div class="col-12">
+            <div class="body_heading">Shop Our Top Categories</div>
+        </div>
+        <div class="col-12">
+            <div class="row g-3">
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard1.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Furniture</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard2.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Hand Bag</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard3.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Books</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard4.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Tech</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard5.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Sneakers</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard6.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Travel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid section_spacing side_spacing py-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="body_heading">Todays Best Deals For You!</div>
+        </div>
+        <div class="col-12">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="bestDealCard">
+                        <div class="cardImg"><img src="assets/img/bestdealcard1.png" alt="today best deal card" class="img-fluid w-100 h-100"></div>
+                        <a href="javascript:;" class="heartIcon"><img src="assets/img/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></a>
+                        <div class="cardContent">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <div class="body_text">HomePod mini</div>
+                                        </div>
+                                        <div class=" col-auto "><div class="body_text"> $239.00</div> </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="body_text_small">Table with air purifier, stained veneer/black</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="list-unstyled d-flex align-items-center gap-1 mt-2">
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon">(121)</a></li>
+        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div><a href="javascript:;" class="addCardBtn">Add to Card</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bestDealCard">
+                        <div class="cardImg"><img src="assets/img/bestdealcard2.png" alt="today best deal card" class="img-fluid w-100 h-100"></div>
+                        <a href="javascript:;" class="heartIcon"><img src="assets/img/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></a>
+                        <div class="cardContent">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <div class="body_text">HomePod mini</div>
+                                        </div>
+                                        <div class=" col-auto "><div class="body_text"> $239.00</div> </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="body_text_small">Table with air purifier, stained veneer/black</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="list-unstyled d-flex align-items-center gap-1 mt-2">
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon">(121)</a></li>
+        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div><a href="javascript:;" class="addCardBtn">Add to Card</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bestDealCard">
+                        <div class="cardImg"><img src="assets/img/bestdealcard3.png" alt="today best deal card" class="img-fluid w-100 h-100"></div>
+                        <a href="javascript:;" class="heartIcon"><img src="assets/img/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></a>
+                        <div class="cardContent">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <div class="body_text">HomePod mini</div>
+                                        </div>
+                                        <div class=" col-auto "><div class="body_text"> $239.00</div> </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="body_text_small">Table with air purifier, stained veneer/black</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="list-unstyled d-flex align-items-center gap-1 mt-2">
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon">(121)</a></li>
+        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div><a href="javascript:;" class="addCardBtn">Add to Card</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bestDealCard">
+                        <div class="cardImg"><img src="assets/img/bestdealcard4.png" alt="today best deal card" class="img-fluid w-100 h-100"></div>
+                        <a href="javascript:;" class="heartIcon"><img src="assets/img/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></a>
+                        <div class="cardContent">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <div class="body_text">HomePod mini</div>
+                                        </div>
+                                        <div class=" col-auto "><div class="body_text"> $239.00</div> </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="body_text_small">Table with air purifier, stained veneer/black</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="list-unstyled d-flex align-items-center gap-1 mt-2">
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon"><img src="assets/img/star.svg" alt="star" class="img-fluid w-100 h-100"></a></li>
+                                                <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center starIcon">(121)</a></li>
+        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div><a href="javascript:;" class="addCardBtn">Add to Card</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+              </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid section_spacing side_spacing">
+    <div class="row">
+        <div class="col-12">
+            <div class="body_heading">Shop Our Top Categories</div>
+        </div>
+        <div class="col-12">
+            <div class="row g-3">
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard1.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Furniture</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard2.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Hand Bag</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard3.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Books</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard4.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Tech</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard5.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Sneakers</div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-6 ">
+                    <div class="shopCateoriesCard">
+                        <div class="cardImg"><img src="assets/img/shopCatogriescard6.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                        <div class="categoriesHeading">Travel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row gap-4">
+                <div class="col-12">
+                    <div class="body_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas culpa inventore cumque autem sed tempore beatae explicabo ab nulla accusamus error sint ipsam saepe nihil laboriosam possimus voluptas unde, dolorem accusantium esse! Incidunt totam ipsam placeat repellendus! Dolor architecto rerum deserunt quasi perferendis, ratione nostrum molestias ut velit officia quia autem facere dicta temporibus nihil corrupti alias accusamus aut quis molestiae ea similique tempora eum. Iusto quas aspernatur at debitis consequatur illum repellat exercitationem earum, atque eum labore nobis ipsa cum provident accusantium consectetur, voluptatum suscipit quis quaerat quibusdam hic? Quia, consequuntur tempore earum cumque sed eaque nihil minima odio.</div>
+                </div>
+                <div class="col-12">
+                    <div class="body_text_Small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente fugiat magnam fuga impedit voluptatem, autem illo quaerat qui esse blanditiis deleniti consequuntur voluptate debitis accusantium modi doloremque libero voluptatibus corporis nesciunt cum commodi? Aliquam perferendis explicabo dignissimos magnam nihil commodi ipsum quasi fuga tempora exercitationem, cumque earum, aliquid voluptas recusandae et rerum? Fuga quod saepe temporibus nulla suscipit dolorem veniam nobis omnis? Distinctio debitis consequuntur odit quia necessitatibus optio, esse magni inventore harum voluptate facilis. Sint dolorem consequatur odio minus inventore quod eius dolor, sunt veniam eligendi eveniet, ullam error laboriosam debitis quasi eos, ipsa in! Atque tenetur recusandae eum.</div>
+                </div>
+                <div class="col-12">
+                    <div class="body_text_Large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente fugiat magnam fuga impedit voluptatem, autem illo quaerat qui esse blanditiis deleniti consequuntur voluptate debitis accusantium modi doloremque libero voluptatibus corporis nesciunt cum commodi? Aliquam perferendis explicabo dignissimos magnam nihil commodi ipsum quasi fuga tempora exercitationem, cumque earum, aliquid voluptas recusandae et rerum? Fuga quod saepe temporibus nulla suscipit dolorem veniam nobis omnis? Distinctio debitis consequuntur odit quia necessitatibus optio, esse magni inventore harum voluptate facilis. Sint dolorem consequatur odio minus inventore quod eius dolor, sunt veniam eligendi eveniet, ullam error laboriosam debitis quasi eos, ipsa in! Atque tenetur recusandae eum.</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+<!-- nav offcanvas  mobile-->
+<div class="offcanvas offcanvas-start text-bg-dark bg-white d-xl-none d-flex mobileOffcanvas" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+    <div class="offcanvas-header">
+      <div class="offcanvas-title d-flex align-items-center logomobile" id="offcanvasNavbar2Label"><img src="assets/img/navbar/logo.svg" alt="logo" class="img-fluid w-100 h-100"></div>
+   
+      <button type="button" class="d-flex align-items-center border-0 shadow-none border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"> <span class="closeBtn d-inline-flex align-items-center"> <img src="assets/img/navbar/Close.png" alt="close" class="img-fluid w-100 h-100"></span></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="input-group mb-2 inputGroup">
+        <input type="text" class="form-control border-0 shadow-none bg-transparents inputSearch" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text searchIcon bg-transparent" id="basic-addon2"><img src="assets/img/navbar/search.svg" alt="search" class="img-fluid w-100 h-100"></span>
+      </div>
+      <div class="accordion mobileAccordion" id="accordionExample">
+        <div class="accordion-item itemAccordion">
+          <div class="accordion-header">
+            <button class="accordion-button accordionBtn active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                Category
+            </button>
+          </div>
+          <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+            <div class="accordion-body p-0">
+                <ul class="submenu p-0">
+                    <!-- <div class="categoryHeading">Popular Categories</div> -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="categoryCard position-relative">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="imageCat"><img src="assets/img/navbar/navcategery1.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                            </div>
+                                            <div class="col ps-0">
+                                                <a href="javascript:;" class="productHeading stretched-link">Furniture</a>
+                                                <div class="productItem">240  Item  Available</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="col-12">
+                                        <div class="categoryCard position-relative">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="imageCat"><img src="assets/img/navbar/navcategery2.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <a href="javascript:;" class="productHeading stretched-link">Hand Bag</a>
+                                                    <div class="productItem">240  Item  Available</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="col-12">
+                                    <div class="categoryCard position-relative">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="imageCat"><img src="assets/img/navbar/navcategery3.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                            </div>
+                                            <div class="col ps-0">
+                                                <a href="javascript:;" class="productHeading stretched-link">Shoe</a>
+                                                <div class="productItem">240  Item  Available</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="categoryCard position-relative">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="imageCat"><img src="assets/img/navbar/navcategery4.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                            </div>
+                                            <div class="col ps-0">
+                                                <a href="javascript:;" class="productHeading stretched-link">Headphone</a>
+                                                <div class="productItem">240  Item  Available</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="categoryCard position-relative">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="imageCat"><img src="assets/img/navbar/navcategery5.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                            </div>
+                                            <div class="col ps-0">
+                                                <a href="javascript:;" class="productHeading stretched-link">Laptop</a>
+                                                <div class="productItem">240  Item  Available</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="categoryCard position-relative">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="imageCat"><img src="assets/img/navbar/navcategery6.png" alt="categoryCard" class="img-fluid w-100 h-100"></div>
+                                            </div>
+                                            <div class="col ps-0">
+                                                <a href="javascript:;" class="productHeading stretched-link">Book</a>
+                                                <div class="productItem">240  Item  Available</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <ul class="mobileUl mb-0 list-unstyled">
+        <li><a href="javascript:;" class="d-flex align-items-center mobileLink ">Deals</a></li>
+        <li><a href="javascript:;" class="d-flex align-items-center mobileLink ">What’s New</a></li>
+        <li><a href="javascript:;" class="d-flex align-items-center mobileLink ">Delivery</a></li>
+        <!-- <li><a href="javascript:;" class="d-flex align-items-center mobileLink ">Shop</a></li> -->
+
+      </ul>
+
+    </div>
+</div>
+
+
+    <script src="assets/bootstrap/bootstrap.js"></script>
+    <script src="assets/libs/swiper/swiper.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+        610: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        },
+        });
+    </script>
+</body>
+</html>
