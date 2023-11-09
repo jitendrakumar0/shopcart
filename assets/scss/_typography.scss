@@ -1,5 +1,7 @@
 // For Normal Text
-
+body{
+    font-family: "Inter", sans-serif !important;
+}
 .body_text{
     font-size: 18px;
     font-weight: 700;
@@ -7,20 +9,20 @@
     line-height: 1.8;
     padding: 10px 0px 0px 0px;
     @include sm{
-        font-size: 20px;
+        font-size: 18px;
 
     }
     @include md{
-    font-size: 22px;
+    font-size: 18px;
         
     }
     @include lg{
-        
+        font-size: 18px;
     }
     @include xl{
-        
+        font-size: 18px;
     }@include xxl{
-        
+        font-size: 18px;
     }
 }
 
@@ -128,7 +130,7 @@
     color:$black;
     font-size: 23px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   
     @include sm{
         font-size: 30px;
@@ -139,12 +141,12 @@
         
     }
     @include lg{
-        
+        font-size: 28px;
     }
     @include xl{
-        
+        font-size: 28px;
     }@include xxl{
-        
+        font-size: 28px;
     }
 }
 
@@ -215,6 +217,37 @@
     font-size: 15px;
     font-weight: 700;
     color: $gray-600;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+// For button 
+
+.button-theme1{
+    background-color:$theme4;
+    z-index: 0;
+    border-radius: 50px;
+    padding: 16px 36px;
+    text-decoration: none;
+    transition: all .2s;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    &:hover{
+        background-color: #272220;
+    }
     @include sm{
 
     }

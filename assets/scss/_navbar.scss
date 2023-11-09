@@ -4,34 +4,41 @@
     background-color: $theme4;
     & .calls{
         & span{
-            color: var(--white);
             text-align: center;
             margin-left: 5px;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 22px;
-            font-weight: 500;
               }
             }
             & .center-block{
-                color: var(--white);
-                font-size: 13px;
+                font-size: 14px;
             }
             & .selected-options{
                 & .langu{
-                    color: var(--white);
                     margin-right: 10px;
-                    font-size: 12px;
+                    font-size: 13px;
                 }
                 & img{
-                    width: 22px;
+                    width: 20px;
+                    position: relative;
+                    top: -2px;
                 }
                 & .divied{
                     border-bottom: 1px solid rgba(0, 0, 0, .24);
                     font-size: 14px;
                     font-weight: 500;
                 }
+              }
+                & .dropdown-menu.show {
+                    display: block;
+                    box-shadow: none;
+                    border: none;
+                    border-radius: 1px;
+                    margin: 4px 0 14px -40px!important;
+                    justify-content: center;
+                
+                }
             }
-}
 
 // navbar start
 
@@ -269,7 +276,7 @@ width: 320px !important;
     & .inputSearch{
         border-radius: 100px;
         border-bottom: 2px solid #ececec;
-        padding: 0 15px;
+        padding: 0 20px;
         height: 38px;
         font-size: 14px;
         color: $black;
@@ -305,6 +312,8 @@ width: 320px !important;
             width: 35px;
             height: 35px;
             padding: 9px;
+            position: relative;
+            right: 7px;
         }
     
     }

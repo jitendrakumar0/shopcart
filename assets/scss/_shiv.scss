@@ -6,13 +6,202 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 150px;
     position: relative;
-    height: 100vh;
+    @include sm{
+        padding-top: 150px;
+        padding-bottom: 150px; 
+    }
+    @include md{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    @include lg{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        
+    }
+    @include xl{
+      
+        padding-top: 150px;
+        padding-bottom: 150px; 
+    }
+    @include xxl{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    & .silder-head {
+        color: $theme4;
+        margin-top: 0;
+        font-family: Eina02, sans-serif;
+        @include sm{
+            font-size: 35px;
+        }
+        @include xl{
+            font-size: 51px;
+        }
+        @include xxl{
+            font-size: 60px;
+        }
+    }
+   
+    & .silder-para{
+        margin-bottom: 10px;
+        font-family: Inter, sans-serif;
+        font-size: 20px;
+        line-height: 145%;
+    }
+    & .inner-baaner-warp{
+        z-index: -1;
+        /* width: 100%; */
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: auto;
+        right: 0;
+    }
+  
+   
 }
 
 
+//  banner icons 1 
+
+.small-baaner-1{
+        @include sm{
+            position: absolute;
+            top: -253px;
+            bottom: auto;
+            right: 11px;
+        }
+        @include md{
+            position: absolute;
+            top: -253px;
+            bottom: auto;
+            right: 11px;
+        }
+        @include lg{
+            position: absolute;
+            top: -285px;
+            bottom: auto;
+            right: 30px;
+            
+        }
+        @include xl{
+            position: absolute;
+            top: -239px;
+            bottom: auto;
+            right: 9px;
+            
+        }@include xxl{
+            position: absolute;
+            top: -249px;
+            bottom: auto;
+            right: 9px;
+        }
+}
+
+
+//  banner icons 2
+
+.small-baaner-2{
+    @include sm{
+
+   }
+   @include md{
+       
+   }
+   @include lg{
+        position: absolute;
+        top: -170px;
+        bottom: auto;
+        left: auto;
+        right: 339px;
+   }
+   @include xl{
+        position: absolute;
+        top: -207px;
+        bottom: auto;
+        left: auto;
+        right: 280px;
+    }
+   @include xxl{
+        position: absolute;
+        top: -157px;
+        bottom: auto;
+        left: auto;
+        right: 339px;
+   }
+}
+
+
+//  banner icons 3
+
+.small-baaner-3{
+    @include sm{
+
+   }
+   @include md{
+       
+   }
+   @include lg{
+    position: absolute;
+    top: -14px;
+    bottom: auto;
+    left: auto;
+    right: 102px;
+       
+   }
+   @include xl{
+    position: absolute;
+    top: -67px;
+    bottom: auto;
+    left: auto;
+    right: 52px;
+       
+   }
+   @include xxl{
+    position: absolute;
+    top: -14px;
+    bottom: auto;
+    left: auto;
+    right: 102px;
+   }
+}
+
+//  banner icons 4
+
+.small-baaner-4{
+  
+    @include sm{
+
+   }
+   @include md{
+       
+   }
+   @include lg{
+        position: absolute;
+        top: 24px;
+        bottom: auto;
+        left: auto;
+        right: 439px;
+       
+   }
+   @include xl{
+        position: absolute;
+        top: 24px;
+        bottom: auto;
+        left: auto;
+        right: 439px;
+       
+   }
+   @include xxl{
+        position: absolute;
+        top: 24px;
+        bottom: auto;
+        left: auto;
+        right: 439px;
+   }
+}
 
 
 
@@ -31,12 +220,12 @@
     }
     & .categoriesHeading{
         position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 15px;
+        text-align: center;
         font-size: 15px;
         color: $white;
         font-weight: 600;
+        width: 100%;
         @include sm{
         font-size: 20px;
 
@@ -50,6 +239,22 @@
         & img{
             transition: all 0.3s ease-in-out;
         }
+    }
+}
+
+// Cash Back Start 
+
+.cash-card{
+    background-color: #ffe6cc;
+    & .silder-head{
+        color: #222;
+        font-size: 51px;
+        line-height: 56px;
+        font-weight: bold;
+    }
+    & .body-text{
+        font-weight: 500;
+        font-size: 21px;
     }
 }
 
@@ -76,7 +281,7 @@
 
         }
         &:hover{
-            background-color: $theme3;
+            background-color: #fddddd;
             & img{
                 filter: invert(1);
             }
@@ -118,6 +323,7 @@
     }
     & .cardContent{
         padding: 0px 10px;
+        margin-bottom: 5px;
         
     }
 }
@@ -157,7 +363,165 @@
     }
 }
 
+// Start Brand Section 
 
+.brand-boxs{
+    z-index: 0;
+    border: 1px solid #f5f6f6;
+    background-color: #f5f6f6;
+    border-radius: 10px;
+    transition: all .2s;
+    & img{
+        transition: all .2s;
+        &:hover{
+            transform: scale(1.2);
+            border-radius: 10px;
+            transition: all .2s;
+        }
+    }
+    &:hover{
+        border: 1px solid #003d29;
+        transition: all .2s;
+    }
+
+    & .brand-title{
+        color: #231f1e;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+    & .small-text{
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 13px;
+    }}
+
+// Get Up To 70% Off
+
+.discount-box{
+     border-radius: 10px;
+     &:hover img{
+        transform: scale(1.2);
+        border-radius: 10px;
+        transition: all .2s;
+    }
+    & .color-text1{
+    color: #cb9917;
+    }
+    & .color-text2{
+        color: #961f1f;
+    }
+    & .color-text3{
+        color: #94623c;
+    }
+    & .color-text4{
+        color: #94623c;
+    }
+    &.offer-color{
+        background-color: #f2e4d9;
+     }
+     &.offer-color2{
+        background-color: #f9dcdc;
+     }
+     &.offer-color3{
+        background-color: #f2e4d9;
+     }
+     &.offer-color4{
+        background-color: #d2f7ec;
+     }
+    & .offer-color{
+        max-width: 381px;
+        margin-top: 0;
+        font-family: Inter, sans-serif;
+        font-size: 22px;
+    }
+    & .discount-body{
+        padding: 30px;
+        & .discount-price{
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 52px;
+        & span{
+            font-size: 31px;
+            line-height: 41px;
+            position: relative;
+            top: -16px;
+            }
+        }
+        & .title{
+                font-size: 22px;
+                font-weight: 600;
+            }
+        & .body-desicrition{
+            color: #231f1e;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    & .offers-img{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        & img{
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transition: all .2s;
+            
+        }
+    }
+}
+
+// Offers Section 
+
+.offers-sections{
+    z-index: 0;
+    background-image: url('../../assets/img/offer-bg.png');
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    & .cash-boxs{
+        background-color: #003d29;
+        text-align: left;
+        padding: 75px 64px !important; 
+    }
+    & .silder-head{
+        color: #fff;
+        font-size: 51px;
+        line-height: 56px;
+    }
+    & .silder-para{
+        font-size: 20px;
+    }
+}
+
+// Todays Best Deals For You! Section 
+.deal-tabs{
+    & .nav-item{
+        & .nav-link{
+            color: #231f1e;
+            text-transform: capitalize;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #c5c5c5;
+            border-radius: 100px;
+            margin-right: 16px;
+            padding: 14px 23px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 100%;
+            transition: all .2s;
+            &.active{
+                color: #fff;
+                background-color: #003d29;
+                border-color: #003d29;
+              }
+           }
+          
+         }
+       
+   
+}
 
 // product details 
 
