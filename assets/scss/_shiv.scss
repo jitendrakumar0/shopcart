@@ -258,6 +258,135 @@
     }
 }
 
+// Trending Section Start 
+
+.trading-box{
+    background-color: #f5f6f6;
+    &:hover img{
+        transform: scale(1.2);
+        border-radius: 10px;
+        transition: all .2s;
+    }
+    & .trading-img{
+        & img{
+            border-radius: 10px;
+            transition: all .2s;
+        }
+    }   
+    & .discount-body{
+        position: relative;
+        padding: 30px 20px;
+        & .tittle{
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & .body-desicrition{
+            align-items: center;
+            margin-bottom: 8px;
+            display: flex;
+            & span{
+                color: #848181;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+// Help Section Start 
+
+.help-box{
+    background-color: #f5f6f6;
+    border-radius: 13px;
+    &:hover img{
+        transform: scale(1.2);
+        border-radius: 10px;
+        transition: all .2s;
+    }
+    & .trading-img{
+        & img{
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transition: all .2s;
+        }
+    }   
+    & .discount-body{
+        position: relative;
+        padding: 30px 30px;
+      
+        & .tittle{
+            color: #000;
+            font-size: 23px;
+            font-weight: 700;
+        }
+        & .body-desicrition{
+            align-items: center;
+            margin-bottom: 8px;
+            display: flex;
+            & span{
+                color: #848181;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// Trending Section Start 
+
+.trading-box2{
+    &:hover .imgs2{
+        transform: scale(1.2);
+        border-radius: 10px;
+        transition: all .2s;
+    }
+    & .trading-img2{
+        & .imgs2
+        {border-radius: 5px;
+            transition: all .2s;
+        }
+    }   
+    & .discount-body2{
+        position: relative;
+        padding: 30px 20px;
+        & img:first-child{
+            position: absolute;
+            left: 19px;
+            top: -31px;
+        }
+        & .tittle2{
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & .body-desicrition2{
+            align-items: center;
+            margin-bottom: 8px;
+            display: flex;
+            & .dot {
+                width: 4px;
+                height: 4px;
+                background-color: #848181;
+                border-radius: 100px;
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+            & span{
+                color: #848181;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+        & span{
+            color: #c34482;
+        }
+    }
+}
+
+
+
 // today best deal card 
 
 .bestDealCard{

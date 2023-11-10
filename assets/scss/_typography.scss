@@ -2,6 +2,14 @@
 body{
     font-family: "Inter", sans-serif !important;
 }
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: #cac4c4;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: $theme4;
+    border-radius: 5px;
+}
 .body_text{
     font-size: 18px;
     font-weight: 700;
