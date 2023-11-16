@@ -256,20 +256,29 @@
         font-weight: 500;
         font-size: 21px;
     }
+    & .atmcard{
+        width: 70%;
+    }
 }
 
 // Trending Section Start 
 
 .trading-box{
     background-color: #f5f6f6;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     &:hover img{
         transform: scale(1.2);
-        border-radius: 10px;
         transition: all .2s;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
     }
     & .trading-img{
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
         & img{
-            border-radius: 10px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
             transition: all .2s;
         }
     }   
@@ -306,6 +315,8 @@
         transition: all .2s;
     }
     & .trading-img{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         & img{
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;
@@ -341,10 +352,11 @@
         transform: scale(1.2);
         border-radius: 10px;
         transition: all .2s;
+        transform: rotateZ('3deg');
     }
     & .trading-img2{
-        & .imgs2
-        {border-radius: 5px;
+        & .imgs2{
+            border-radius: 5px;
             transition: all .2s;
         }
     }   
@@ -391,7 +403,7 @@
 
 .bestDealCard{
     position: relative;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.09);
+   // box-shadow: 0px 0px 10px 0px rgba(0,0,0,.09);
     border-radius: 10px;
     & .heartIcon{
         width: 40px;
@@ -451,9 +463,11 @@
     
     }
     & .cardContent{
-        padding: 0px 10px;
+        padding: 0px 2px;
         margin-bottom: 5px;
-        
+        & .body_text_small {
+            font-size: 12px;
+        }
     }
 }
 
@@ -523,7 +537,7 @@
     & .small-text{
         font-size: 13px;
         font-weight: 500;
-        line-height: 13px;
+        line-height: 15px;
     }}
 
 // Get Up To 70% Off
@@ -545,7 +559,7 @@
         color: #94623c;
     }
     & .color-text4{
-        color: #94623c;
+        color: #003d29;
     }
     &.offer-color{
         background-color: #f2e4d9;

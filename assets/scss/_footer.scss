@@ -9,6 +9,9 @@
         font-weight: 600;
         line-height: 22px;
     }
+    & .text-size{
+        font-size: 14px;
+    }
     & .payment{
         display: inline-block;
         & ul{
@@ -51,3 +54,51 @@
           }
      }
 }
+    .copyright-sec{
+        padding-top: 30px;
+        border-top: 1px solid rgba(35,31,30,.2);
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        font-size: 15px;
+        & .points-left{
+            & li{
+                list-style: none;
+                display: inline-block;
+                margin-right: 22px;
+                & a{
+                    text-decoration: none;
+                    color: $black;
+                    & img{
+                        padding-right: 10px;
+                        position: relative;
+                        top: -1px;
+                    }
+                }
+            }
+        }
+        .points-center{
+            display: flex;
+            & li{
+                list-style: none;
+                display: inline-block;
+                & a{
+                    text-decoration: none;
+                    color: $black;
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        .points-left{
+            display: flex;
+            & li{
+                list-style: none;
+                display: inline-block;
+                & a{
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+        }
+    }
