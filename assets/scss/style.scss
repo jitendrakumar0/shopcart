@@ -1,5 +1,4 @@
 
-@import "./variable.scss";
 
 
 @mixin xs {
@@ -46,11 +45,12 @@
 }
 @include generate-classes(5);
 
+@import "./variable.scss";
+
+@import "./typography.scss";
 
 @import "./navbar.scss";
 
 @import "./shiv.scss";
-
-@import "./typography.scss";
 
 @import "./footer.scss";

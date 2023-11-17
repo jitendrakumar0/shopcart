@@ -1,5 +1,8 @@
 
 .footer-top{
+    & img{
+        
+    }
     & .payment-head{
         color: #000;
         text-transform: capitalize;
@@ -19,11 +22,28 @@
             & li{
                 display: inline-block;
                 min-height: 40px;
-                min-width: 58px;
+                min-width: 23%;
                 border: 0.5px solid #d9d9d9;
                 border-radius: 5px;
                 text-align: center;
                 line-height: 34px;
+                @include sm{
+          
+                }
+                @include md{
+                    
+                }
+                @include lg{
+                    
+                    
+                }
+                @include xl{
+                    
+                    
+                }@include xxl{
+                    min-height: 40px;
+                     min-width: 58px; 
+                }
             }
         }
     }

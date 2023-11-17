@@ -13,6 +13,7 @@
             & .center-block{
                 font-size: 13px;
             }
+            
             & .selected-options{
                 & .langu{
                     margin-right: 10px;
@@ -38,17 +39,23 @@
                     justify-content: center;
                 
                 }
+                & .center-block sm{
+                    display: none;
+                }
+             
+
             }
 
 // navbar start
 
 .navbar{
-    padding: 0px 40px !important;
+    padding: 0px 40px ;
 
     height: 70px;
     background-color: $white;
     @include sm{
         height: 82px;
+        padding: 0px 15px ;
     }
     & .navLogo{
         width: 175px;

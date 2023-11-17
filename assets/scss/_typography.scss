@@ -14,7 +14,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 18px;
     font-weight: 700;
     color: $black;
-    line-height: 1.8;
+    line-height: 1.0;
     padding: 10px 0px 0px 0px;
     @include sm{
         font-size: 18px;
@@ -25,12 +25,14 @@ body::-webkit-scrollbar-thumb {
         
     }
     @include lg{
-        font-size: 18px;
+        font-size: 15px;
     }
     @include xl{
-        font-size: 18px;
+        font-size: 15px;
+        line-height: 1.8;
     }@include xxl{
         font-size: 18px;
+        line-height: 1.8;
     }
 }
 
@@ -158,7 +160,7 @@ body::-webkit-scrollbar-thumb {
 
     }
     @include md{
-    font-size: 35px;
+     font-size: 35px;
         
     }
     @include lg{
@@ -260,7 +262,8 @@ body::-webkit-scrollbar-thumb {
     background-color:$theme4;
     z-index: 0;
     border-radius: 50px;
-    padding: 16px 36px;
+    padding: 11px 26px;
+    font-size: 15px;
     text-decoration: none;
     transition: all .2s;
     position: relative;
@@ -276,11 +279,21 @@ body::-webkit-scrollbar-thumb {
         
     }
     @include lg{
-        
+        padding: 16px 36px;
     }
     @include xl{
-        
-    }@include xxl{
-        
+        padding: 16px 36px;
     }
+    @include xxl{
+        padding: 16px 36px;
+        font-size: 15px;
+    }
+}
+
+.text_ellipsis{
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

@@ -7,34 +7,42 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-top: 80px;
+    padding-bottom:80px; 
     @include sm{
-        padding-top: 150px;
-        padding-bottom: 150px; 
+        padding-top: 80px;
+        padding-bottom:80px; 
     }
     @include md{
         padding-top: 150px;
-        padding-bottom: 150px;
+         padding-bottom: 150px; 
     }
     @include lg{
         padding-top: 150px;
-        padding-bottom: 150px;
-        
+         padding-bottom: 150px; 
     }
+     
     @include xl{
-      
         padding-top: 150px;
-        padding-bottom: 150px; 
+         padding-bottom: 150px; 
     }
+     
+
     @include xxl{
         padding-top: 150px;
-        padding-bottom: 150px;
+         padding-bottom: 150px; 
     }
+     
     & .silder-head {
         color: $theme4;
         margin-top: 0;
         font-family: Eina02, sans-serif;
+        font-size: 35px;
         @include sm{
             font-size: 35px;
+        }
+        @include md{
+            font-size: 56px;
         }
         @include xl{
             font-size: 51px;
@@ -47,8 +55,23 @@
     & .silder-para{
         margin-bottom: 10px;
         font-family: Inter, sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 145%;
+        @include sm{
+            font-size: 16px;
+        }
+        @include md{
+            font-size: 16px;
+        }
+        @include md{
+            font-size: 28px;
+        }
+        @include xl{
+            font-size: 18px;
+        }
+        @include xxl{
+            font-size: 20px;
+        }
     }
     & .inner-baaner-warp{
         z-index: -1;
@@ -59,8 +82,6 @@
         bottom: auto;
         right: 0;
     }
-  
-   
 }
 
 
@@ -216,22 +237,38 @@
             & img{
                 transform: scale(1.1);
             }
+           
+          
         }
+       
     }
+   
     & .categoriesHeading{
         position: absolute;
         top: 15px;
         text-align: center;
-        font-size: 15px;
+        font-size: 20px;
         color: $white;
         font-weight: 600;
         width: 100%;
         @include sm{
-        font-size: 20px;
+            font-size: 20px;
 
         }
         @include md{
-        font-size: 25px;
+            font-size: 25px;
+
+        }
+        @include lg{
+            font-size: 22px;
+
+        }
+        @include xxl{
+            font-size: 22px;
+
+        }
+        @include xxl{
+            font-size: 22px;
 
         }
     }
@@ -239,6 +276,7 @@
         & img{
             transition: all 0.3s ease-in-out;
         }
+       
     }
 }
 
@@ -248,9 +286,26 @@
     background-color: #ffe6cc;
     & .silder-head{
         color: #222;
-        font-size: 51px;
-        line-height: 56px;
+        font-size: 26px;
+        line-height: 33px;
         font-weight: bold;
+        @include sm{
+          
+        }
+        @include md{
+            
+        }
+        @include lg{
+            
+            
+        }
+        @include xl{
+            
+            
+        }@include xxl{
+            font-size: 51px;
+            line-height: 56px;
+        }
     }
     & .body-text{
         font-weight: 500;
@@ -258,6 +313,22 @@
     }
     & .atmcard{
         width: 70%;
+        @include sm{
+          
+        }
+        @include md{
+            width: 100%
+        }
+        @include lg{
+            
+            
+        }
+        @include xl{
+            
+            
+        }@include xxl{
+            width: 70%;
+        }
     }
 }
 
@@ -325,12 +396,41 @@
     }   
     & .discount-body{
         position: relative;
-        padding: 30px 30px;
+        padding: 30px 15px;
+        @include sm{
+          
+        }
+        @include md{
+            
+        }
+        @include lg{
+            
+            
+        }
+        @include xl{
+            padding: 30px 30px;
+            
+        }@include xxl{
+            padding: 30px 30px;
+        }
       
         & .tittle{
             color: #000;
-            font-size: 23px;
+            font-size: 20px;
             font-weight: 700;
+            @include sm{
+                font-size: 18px; 
+            }
+            @include md{
+                font-size: 22px;
+                
+            }
+            @include xl{
+                
+                
+            }@include xxl{
+                font-size: 23px;
+            }
         }
         & .body-desicrition{
             align-items: center;
@@ -349,10 +449,9 @@
 
 .trading-box2{
     &:hover .imgs2{
-        transform: scale(1.2);
         border-radius: 10px;
         transition: all .2s;
-        transform: rotateZ('3deg');
+        transform: scale(1.2) rotate(5deg);
     }
     & .trading-img2{
         & .imgs2{
@@ -362,21 +461,73 @@
     }   
     & .discount-body2{
         position: relative;
-        padding: 30px 20px;
+        padding: 30px 10px 10px;
+        @include sm{
+          
+        }
+        @include md{
+            
+        }
+        @include lg{
+            
+            
+        }
+        @include xl{
+            padding: 30px 20px;
+            
+        }@include xxl{
+            padding: 30px 20px;
+        }
         & img:first-child{
             position: absolute;
-            left: 19px;
-            top: -31px;
+            left: 11px;
+            top: -38px;
+            @include sm{
+          
+            }
+            @include md{
+                
+            }
+            @include lg{
+                
+                
+            }
+            @include xl{
+                left: 19px;
+                top: -31px;
+                
+            }
+            @include xxl{
+                left: 19px;
+                top: -31px; 
+            }
         }
         & .tittle2{
             color: #000;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 700;
+            @include sm{
+          
+            }
+            @include md{
+                
+            }
+            @include lg{
+                
+                
+            }
+            @include xl{
+                font-size: 20px;
+                
+            }@include xxl{
+                font-size: 20px;
+            }
         }
         & .body-desicrition2{
             align-items: center;
-            margin-bottom: 8px;
+            margin-bottom: 0px;
             display: flex;
+            
             & .dot {
                 width: 4px;
                 height: 4px;
@@ -390,9 +541,19 @@
                 font-size: 12px;
                 font-weight: 500;
             }
+            @include xxl{
+                margin-bottom: 8px;
+            }
         }
         & span{
             color: #c34482;
+            font-size: 12px;
+            @include md{
+                font-size: 10px;
+            }
+            @include xxl{
+                font-size: 15px;
+            }
         }
     }
 }
@@ -412,8 +573,8 @@
         background-color: $white;
         padding: 12px;
         position: absolute;
-        top: 15px;
-        right: 15px;
+        top: 6px;
+        right: 7px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -431,35 +592,82 @@
             width: 50px;
             height: 50px;
         }
+        @include xxl{
+            top: 15px;
+            right: 15px;
+       }
+        @include xl{
+            top: 15px;
+            right: 15px;
+       }
+        @include xxl{
+             top: 15px;
+             right: 15px;
+        }
     }
     & .cardImg{
         background-color: lighten($black, 95);
         border-radius: 10px;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
-        height: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
         @include sm{
-            height: 320px;
-    
-                &:hover{
-                    & img{
-                        transform: scale(1.1);
-                    }
+           
+              &:hover{
+                & img{
+                    transform: scale(1.1);
+                }
                 }
             }
         & img{
-            height: 200px !important;
+            height: auto !important;
             width: 200px !important;
             transition: all 0.3s ease-in-out;
             @include sm{
-           height: 300px !important;
-            width: 300px !important;
+                height: 200px;
+                width: 200px;
+            }
+            @include md{
+                height: 200px;
+                width: 200px;
+            }
+            @include lg{
+                height: 200px;
+                width: 200px;
+            }
+            @include xl{
+                height: 200px;
+                width: 200px;
+            }
+            @include xxl{
+                height: 200px;
+                width: 200px;
             }
 
+
         }
+
+        @include sm{
+           
+        }
+
+        @include md{
+            height: auto;
+        }
+
+        @include lg{
+            height: auto;
+        }
+
+        @include xl{
+            height: 250px;
+           }
+
+        @include xxl{
+          height: 250px;
+         }
     
     }
     & .cardContent{
@@ -500,10 +708,19 @@
         color: $white;
     }
     @include sm{
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 22px;
 
     }
+    @include lg{
+        font-size: 14px;
+     }
+    @include xl{
+        font-size: 14px;
+     }
+    @include xxl{
+        font-size: 14px;
+     }
 }
 
 // Start Brand Section 
@@ -580,7 +797,7 @@
         font-size: 22px;
     }
     & .discount-body{
-        padding: 30px;
+        padding: 20px;
         & .discount-price{
             font-size: 52px;
             font-weight: 700;
@@ -602,7 +819,23 @@
             font-size: 16px;
             font-weight: 500;
         }
-    }
+        @include sm{
+            padding: 20px;
+        }
+        @include md{
+            padding: 20px;
+        }
+        @include lg{
+            padding: 20px;
+        }
+
+        @include xl{
+            padding: 30px;
+        }
+        @include xxl{
+            padding: 30px;
+        }
+     }
     & .offers-img{
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -620,22 +853,82 @@
 .offers-sections{
     z-index: 0;
     background-image: url('../../assets/img/offer-bg.png');
-    background-position: 100%;
+    background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    @include sm{
+        background-position: 50%;
+    }
+    @include md{
+        background-position: 76%;
+    }
+    @include lg{
+        background-position: 100%;
+    }
+    @include xl{
+        background-position: 100%;
+    }
+    @include xxl{
+        background-position: 100%;
+    }
+
     & .cash-boxs{
         background-color: #003d29;
         text-align: left;
-        padding: 75px 64px !important; 
+        padding:33px 30px;
+        @include sm{}
+        @include md{}
+        @include lg{
+            padding: 75px 64px; 
+        }
+        @include xl{
+            padding: 75px 64px; 
+        }
+        @include xxl{
+            padding: 75px 64px; 
+        }
     }
     & .silder-head{
         color: #fff;
-        font-size: 51px;
-        line-height: 56px;
+        font-size: 26px;
+        line-height: 33px;
+       
+        @include sm{}
+        @include md{
+            font-size: 45px;
+            line-height: 56px;
+        }
+        @include lg{
+            font-size: 50px;
+            line-height: 56px;
+        }
+        @include xl{
+            font-size: 51px;
+            line-height: 56px;
+        }
+        @include xxl{
+            font-size: 51px;
+            line-height: 56px;
+        }
     }
     & .silder-para{
-        font-size: 20px;
+        font-size: 17px;
+        @include sm{
+            font-size: 17px;
+        }
+        @include md{
+            font-size: 20px;
+        }
+        @include lg{
+            font-size: 20px;
+        }
+        @include xl{
+            font-size: 20px;
+        }
+        @include xxl{
+            font-size: 20px;
+        }
     }
 }
 
@@ -648,9 +941,10 @@
             background-color: rgba(0, 0, 0, 0);
             border: 1px solid #c5c5c5;
             border-radius: 100px;
-            margin-right: 16px;
+            margin-right: 5px;
             padding: 14px 23px;
-            font-size: 14px;
+            font-size: 12px;
+            margin-bottom: 10px;
             font-weight: 600;
             line-height: 100%;
             transition: all .2s;
@@ -658,6 +952,15 @@
                 color: #fff;
                 background-color: #003d29;
                 border-color: #003d29;
+              }
+              @include sm{}
+              @include md{}
+              @include lg{}
+              @include xxl{}
+              @include xxl{
+                margin-right: 16px;
+                padding: 14px 23px;
+                font-size: 14px;
               }
            }
           
